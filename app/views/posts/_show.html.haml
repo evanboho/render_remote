@@ -1,0 +1,14 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @post.title
+  
+%p
+  %b Body:
+  = @post.body
+  
+
+= link_to 'Edit', edit_post_path(@post), :remote => true
+|
+= link_to 'Back', posts_path, :remote => true

@@ -1,0 +1,3 @@
+<% obj_title = eval("@#{params[:controller].singularize}.title") %>;
+$('#body-partial').html('<%= j render "#{params[:controller]}/form" %>');
+document.title = '<%= j "#{params[:action].titleize} #{obj_title}" %>';

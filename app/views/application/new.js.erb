@@ -1,0 +1,2 @@
+$('#body-partial').html('<%= j render "#{params[:controller]}/form" %>');
+document.title = "<%= j "#{params[:action].titleize} #{params[:controller].singularize}" %>";
